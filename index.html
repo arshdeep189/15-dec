@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="hearts-container"></div>
+
+    <div id="locked-screen" class="container locked-view">
+        <h1 style="font-size: 4rem;">🔒</h1>
+        <h2>Shhh! It's not time yet.</h2>
+        <p>Come back when the clock hits midnight.</p>
+        
+        <div id="countdown" class="countdown-container">
+            <div class="time-box">
+                <span id="days">00</span>
+                <span class="label">Days</span>
+            </div>
+            <div class="time-box">
+                <span id="hours">00</span>
+                <span class="label">Hours</span>
+            </div>
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <span class="label">Mins</span>
+            </div>
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <span class="label">Secs</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="birthday-content" class="container" style="display: none;">
+        
+        <header class="hero">
+            <h1>Happy Birthday, Annuuu ❤️ ! 🎂</h1>
+            <p>The wait is finally over.</p>
+        </header>
+
+        <section class="surprise-box">
+            <p class="instruction">I have a surprise for you...</p>
+            <button id="surpriseBtn" class="cute-btn">Click for a Surprise! 🎁</button>
+            
+            <div id="hiddenMessage" class="hidden">
+                <h2>God Bless You! ❤️</h2>
+                <p>Play our song while you scroll?</p>
+                <audio id="bdayAudio" controls>
+                    <source src="song.mp3" type="audio/mpeg">
+                    Your browser does not support audio.
+                </audio>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery hidden">
+            
+            <h2 style="margin-top: 50px;">The Birthday Girl 👑</h2>
+            <div class="photo-grid">
+                <img src="her1.jpg" alt="Her">
+                <img src="her2.jpg" alt="Her">
+                <img src="her3.jpg" alt="Her">
+            </div>
+            <!-- <h2>Our Memories 📸</h2>
+            <div class="photo-grid">
+                <img src="us1.jpg" alt="Us Together">
+                <img src="us2.jpg" alt="Us Together">
+                <img src="us3.jpg" alt="Us Together">
+            </div> -->
+
+
+        </section>
+
+        <div id="final-step" class="hidden" style="margin-top: 50px; text-align: center;">
+            <p style="margin-bottom: 20px; font-size: 1.2rem;">I have one last thing for you...</p>
+            <a href="letter.html" class="cute-btn" style="text-decoration: none;">
+                Open the Letter 💌 (only when alone 🤫)
+            </a>
+        </div>
+
+        <footer id="footer" class="hidden">
+            <p>Made with ❤️ by...</p>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
